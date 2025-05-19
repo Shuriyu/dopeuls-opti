@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide Optimisé Dopeuls Dofus</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #f5deb3;
+      font-family: 'Trebuchet MS', sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      color: #adff2f;
+    }
+    .link {
+      display: block;
+      margin: 0.5rem 0;
+      cursor: pointer;
+      color: #00ffcc;
+      text-decoration: underline;
+    }
+    .link:hover {
+      color: #ffff00;
+    }
+  </style>
+</head>
+<body>
+  <h1>Guide Optimisé Dopeuls Dofus</h1>
+  <p>Départ zaap Montagne des craqueleurs</p>
+  <p>Cliquez sur classe pour copier la commande /travel</p>
+
+  <span class="link" onclick="copyCommand('/travel -3 -4')">Sacrieur</span>
+  <span class="link" onclick="copyCommand('/travel 1 -8')">Zobal</span>
+  <span class="link" onclick="copyCommand('/travel 1 -5')">Ecalip</span>
+  <span class="link" onclick="copyCommand('/travel -1 -4')">Enutrof</span>
+  <span class="link" onclick="copyCommand('/travel 39 -21')">Uper</span>
+  <span class="link" onclick="copyCommand('/travel -4 0')">Sram</span>
+  <span class="link" onclick="copyCommand('/travel 33 -84')">Forgelance</span>
+  <span class="link" onclick="copyCommand('/travel 0 3')">Cra</span>
+  <span class="link" onclick="copyCommand('/travel 1 3')">Iop</span>
+  <span class="link" onclick="copyCommand('/travel 10 16')">Roublard</span>
+  <span class="link" onclick="copyCommand('/travel 3 1')">Xelor</span>
+  <span class="link" onclick="copyCommand('/travel 15 32')">Elliotrope</span>
+  <span class="link" onclick="copyCommand('/travel 4 -2')">Pandawa</span>
+  <span class="link" onclick="copyCommand('/travel 7 1')">Eniripsa</span>
+  <span class="link" onclick="copyCommand('/travel 8 2')">Osamodas</span>
+  <span class="link" onclick="copyCommand('/travel 26 22')">Steamer</span>
+  <span class="link" onclick="copyCommand('/travel 8 -67')">Ouginak</span>
+  <span class="link" onclick="copyCommand('/travel 12 5')">Féca</span>
+  <span class="link" onclick="copyCommand('/travel -1 9')">Sadida</span>
+
+  <script>
+    function copyCommand(cmd) {
+      navigator.clipboard.writeText(cmd).then(() => {
+        alert(`Commande copiée : ${cmd}`);
+      });
+    }
+  </script>
+</body>
+</html>
